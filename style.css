@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+.bandeiras{
+    width: 50%;
+    height: 720px;
+    border-color: black;
+    overflow-y: auto;
+    flex: 2;
+    
+}
+main{
+    display: flex;
+}
+
+.text{
+    width: 50%;
+    height: 720px;
+    overflow-y: auto;
+    /* background-color: #1E1E2A; */
+}
