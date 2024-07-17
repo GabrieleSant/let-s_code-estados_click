@@ -1,13 +1,33 @@
 *{
     box-sizing: border-box;
 }
+
+body{
+    background-color: #303056;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: #fff;
+    font-size: 40px;
+}
+
 .bandeiras{
     width: 50%;
     height: 720px;
     border-color: black;
     overflow-y: auto;
     flex: 2;
-    
+    background-color: #282841;
+    color: #fff;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 20px;
+    padding: 30px;
 }
 main{
     display: flex;
@@ -17,5 +37,7 @@ main{
     width: 50%;
     height: 720px;
     overflow-y: auto;
-    /* background-color: #1E1E2A; */
+    background-color: #282841;
+    color: #fff;
+    padding: 10px;
 }

@@ -13,13 +13,30 @@ async function carregarDados(){
 async function carregarText(info){
     // dados.map(dado => { 
         div_text.innerHTML = '';
-        let nome = document.createElement('h3');
+        let nome = document.createElement('h2');
         nome.textContent = info.nome;
         div_text.appendChild(nome);
 
         let descricao = document.createElement('p');
         descricao.textContent = info.descricao;
         div_text.appendChild(descricao);
+
+        let clima = document.createElement('p');
+        clima.textContent = info.clima;
+        div_text.appendChild(clima)
+
+        let habitantes = document.createElement('p');
+        habitantes.textContent = `Habitantes: ${info.habitantes}`;
+        div_text.appendChild(habitantes);
+
+        let area = document.createElement('p');
+        area.textContent = `Área: ${info.area_km2}`;
+        div_text.appendChild(area)
+
+        let mapa = document.createElement('img');
+        mapa.setAttribute('src', info.mapa_url);
+        mapa.setAttribute('width', '100px');
+        div_text.appendChild(mapa)
 
 }
 
@@ -28,9 +45,9 @@ async function Dados(){
     const mostrarInfo = await carregarDados();
     
     mostrarInfo.map(info => {
-        let nome = document.createElement("h3");
-        nome.textContent = info.nome;
-        div_bandeiras.appendChild(nome);
+        // let nome = document.createElement("h3");
+        // nome.textContent = info.nome;
+        // div_bandeiras.appendChild(nome);
 
         let bandeira = document.createElement("img");
         bandeira.setAttribute("src", info.bandeira_url)
